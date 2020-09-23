@@ -10,6 +10,13 @@ namespace HelloWorldConsole
     {
         static void Main(string[] args) 
         {
+            Console.WriteLine("hello world");
+            Console.WriteLine("hello class");
+            Console.WriteLine("wat is uw naam?");
+            var ingevuld = Console.ReadLine();
+            Console.WriteLine($"hallo {ingevuld}");
+            Console.ReadLine();
+
         }
     }
 }
