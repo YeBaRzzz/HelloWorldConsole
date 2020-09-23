@@ -12,11 +12,13 @@ namespace HelloWorldConsole
         {
             Console.WriteLine("hello world");
             Console.WriteLine("hello class");
-            Console.WriteLine("wat is uw naam?");
+            Console.WriteLine("wat is je naam");
             var ingevuld = Console.ReadLine();
-            Console.WriteLine($"hallo {ingevuld}");
+            if(ingevuld == "yoeri")
+            Console.WriteLine($"Hallo {ingevuld}");
+            else
+            Console.WriteLine($"joejoe {ingevuld}");
             Console.ReadLine();
-
         }
     }
 }
