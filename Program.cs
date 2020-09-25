@@ -8,16 +8,23 @@ namespace HelloWorldConsole
 {
     class Program
     {
-        static void Main(string[] args) 
+        static void Main(string[] args)
         {
             Console.WriteLine("hello world");
             Console.WriteLine("hello class");
             Console.WriteLine("wat is je naam");
             var ingevuld = Console.ReadLine();
-            if(ingevuld == "yoeri")
-            Console.WriteLine($"Hallo {ingevuld}");
+            if (ingevuld == "yoeri")
+                Console.WriteLine($"Hallo {ingevuld}");
             else
-            Console.WriteLine($"joejoe {ingevuld}");
+                Console.WriteLine($"joejoe {ingevuld}");
+            
+            Console.WriteLine("wat doe je nu?");
+            var volgende = Console.ReadLine();
+            if (volgende == "aan school werken")
+                Console.WriteLine($"{volgende} is goed");
+            else
+                Console.WriteLine($"{volgende} .ga aan school");
             Console.ReadLine();
         }
     }
